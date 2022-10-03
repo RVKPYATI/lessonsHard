@@ -17,7 +17,7 @@ switch (lang) {
         break;
 }
 
-let lang2 = new Map ([['ru', "'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'"],['eng', "'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'"]]);
+let lang2 = new Map ([['ru', daysRu],['eng', daysEng]]);
 console.log(lang2.get('ru'));
 
 let namePerson = prompt('Введите имя');
