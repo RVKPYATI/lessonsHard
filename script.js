@@ -2,12 +2,13 @@
 function getStr(string) {
     if (typeof string !== 'string') {
         console.log('Вы ввели не строку');
-    } else {
+        return null;
+    } 
         string = string.trim();
         if(string.length > 30) {
             string = string.substr(0, 30) + '...';
         }
-    }
+    
     return string;
 }
 
