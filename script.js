@@ -2,6 +2,15 @@
 
 const arr = ['56', '78', '123', '456', '99', '744', '204'];
 
+function isPrime(num) {
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+
+    return num > 1;
+}
 
 for (let i = 0; i < arr.length; i++) {
     
@@ -14,13 +23,4 @@ for (let i = 2; i <= 100; i++) {
     if(isPrime(i)) {
         console.log(i, `Делители этого числа 1 и ${i}`);
     }
-}
-function isPrime(num) {
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
-            return false;
-        }
-    }
-
-    return num > 1;
 }
